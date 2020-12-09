@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'OpenSans-bold';
+  src: local('OpenSans-bold'), url('/font/OpenSans-Bold.woff2') format('woff2'), url('/font/OpenSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: local('OpenSans-regular'), url('/font/OpenSans-Regular.woff2') format('woff2'), url('/font/OpenSans-Regular.woff') format('woff');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'OpenSans-regular', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+.caption-heading {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+.button-common {
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-width: 259px;
+  width: 100%;
+  text-align: center;
+  padding: 14px 10px;
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #444444;
+}
+.site-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.site-list__link {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.site-list__link--search {
+  padding: 0;
+  border: none;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+.site-list__link--search::placeholder {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+.section-things__heading {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+.section-things__mini-catalog {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.section-things__mini-catalog--interior {
+  background-color: #63d1bb;
+}
+.section-things__mini-catalog--toys {
+  background-color: #56c3b2;
+}
+.section-featured__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+.section-featured__text {
+  font-size: 15px;
+  line-height: 24px;
+}
+.section-featured__charac {
+  font-size: 15px;
+  line-height: 20px;
+}
+.section-featured__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #444444;
+}
+.section-about__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.about-list__item {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+.article-review__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+.article-review__name {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+.article-review__insta {
+  font-family: 'OpenSans-regular', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+.section-contacts__title {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.section-contacts__td {
+  font-size: 15px;
+  line-height: 30px;
+}
+.page-footer__developed {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+}

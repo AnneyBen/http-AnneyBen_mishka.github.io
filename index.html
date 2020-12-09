@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
+<!--lessc d:/qwerty/projectsP/mishka/less/header.less d:/qwerty/projectsP/mishka/css/style.css-->
+
+
 <body>
     <header class="page-header">
         <a class="page-header__logo">
             <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Мишка" width="86" height="35">
         </a>
         <button class="page-header__button button">Меню</button>
-        <nav class="main-nav">
-            <ul class="main-nav__list site-list">
+        <nav class="page-header__main-nav">
+            <ul class="page-header__list site-list">
                 <li class="site-list__item">
                     <a href="catalog.html" class="site-list__link">Каталог товаров</a>
                 </li>
@@ -20,7 +25,7 @@
                     <a href="#" class="site-list__link">Вязание на заказ</a>
                 </li>
                 <li class="site-list__item">
-                    <input type="search" class="site-list__link site-list__link--search" placeholder="Поиск по сайту"></input>
+                    <input type="search" class="site-list__link site-list__link--search" placeholder="Поиск по сайту"/>
                 </li>
                 <li class="site-list__item">
                     <a href="#" class="site-list__link site-list__link--cart">Корзина: пока пуста</a>
@@ -93,7 +98,7 @@
                 <button class="article-review__toggle article-review__toggle--left">Налево</button>
                 <button class="article-review__toggle article-review__toggle--right">Направо</button>
             </div>
-            <a href="#" class="article-review__button">Написать</a>
+            <a href="#" class="article-review__button button-common">Написать</a>
         </section>
 
         <section class="page-main__container-contacts section-contacts">

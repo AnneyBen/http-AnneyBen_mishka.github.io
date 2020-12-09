@@ -1,0 +1,55 @@
+
+//lessc less/styles.less > css/style.css
+
+@import url("less/help/fonts.less");
+@import url("less/help/mixins.less");
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    .pama();
+}
+
+body{
+    .pama();
+    font-size: 15px;
+    .open-reg();
+    font-weight: normal;
+    color: @font-main;
+}
+
+.caption-heading{
+    .font(25px, 30px);
+    .open-bold();
+    font-weight: bold;
+}
+
+.button-common{
+    .pama();
+    display: block;
+    max-width: 259px;
+    width: 100%;
+    text-align: center;
+    padding: 14px 10px;
+
+    .open-bold();
+    font-weight: bold;
+    .font(17px, 20px);
+    text-transform: uppercase;
+    color: @color-darken;
+    text-decoration: none;
+
+    background-color: transparent;
+    border: 2px solid @color-darken;
+}
+
+@import url("less/base/header.less");
+@import url("less/base/section-featured.less");
+@import url("less/base/section-about.less");
+@import url("less/base/section-reviews.less");
+@import url("less/base/section-contacts.less");
+@import url("less/base/footer.less");
+
+
