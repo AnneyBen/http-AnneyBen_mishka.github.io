@@ -1,0 +1,49 @@
+@import url("less/help/vars.less");
+@import url("less/help/mixins.less");
+
+.page-main__main-title{
+    .open-bold();
+    font-weight: bold;
+    .font(27px, 30px);
+}
+
+.section-form__text{
+    .font(13px, 24px);
+}
+
+.form-legend{
+    .open-bold();
+    font-weight: bold;
+    .font(17px, 16px);
+
+    color: @mini-catalog--interior;
+}
+
+.form-label{
+    .open-bold();
+    font-weight: bold;
+    .font(17px, 18px);
+
+}
+
+.form-fieldset-initials__input,
+.form-fieldset-phone__input,
+.form-fieldset-email__input,
+.form-fieldset-additionally__textarea{
+    .open-reg();
+    .font(17px, 18px);
+}
+
+.form-fieldset-initials__input::placeholder,
+.form-fieldset-phone__input::placeholder,
+.form-fieldset-email__input::placeholder,
+.form-fieldset-additionally__textarea::placeholder{
+    .open-reg();
+    .font(17px, 18px);
+    color: fade(@font-main, 30%);
+}
+
+.section-form__tiny{
+    .font(14px, 16px);
+}
+

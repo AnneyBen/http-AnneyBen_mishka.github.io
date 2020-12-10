@@ -94,6 +94,12 @@ body {
 .section-things__mini-catalog--toys {
   background-color: #56c3b2;
 }
+.page-footer__developed {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+}
 .section-featured__subtitle {
   font-size: 17px;
   line-height: 20px;
@@ -154,9 +160,85 @@ body {
   font-size: 15px;
   line-height: 30px;
 }
-.page-footer__developed {
+.page-main__main-title {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 27px;
+  line-height: 30px;
+}
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.catalog-list__name {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+.catalog-list__characteristics {
+  font-size: 13px;
+  line-height: 30px;
+  font-style: normal;
+}
+.catalog-list__price {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}
+.section-processing__title {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+.section-processing__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+.page-main__main-title {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+.section-form__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+.form-legend {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+.form-label {
+  font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
   line-height: 18px;
+}
+.form-fieldset-initials__input,
+.form-fieldset-phone__input,
+.form-fieldset-email__input,
+.form-fieldset-additionally__textarea {
+  font-family: 'OpenSans-regular', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+}
+.form-fieldset-initials__input::placeholder,
+.form-fieldset-phone__input::placeholder,
+.form-fieldset-email__input::placeholder,
+.form-fieldset-additionally__textarea::placeholder {
+  font-family: 'OpenSans-regular', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.section-form__tiny {
+  font-size: 14px;
+  line-height: 16px;
 }

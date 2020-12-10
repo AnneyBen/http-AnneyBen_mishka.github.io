@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="page-header">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
             <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Мишка" width="86" height="35">
         </a>
         <button class="page-header__button button">Меню</button>
         <nav class="page-header__main-nav">
             <ul class="page-header__list site-list">
                 <li class="site-list__item">
-                    <a href="#" class="site-list__link">Каталог товаров</a>
+                    <a href="catalog.html" class="site-list__link">Каталог товаров</a>
                 </li>
                 <li class="site-list__item">
                     <a href="#" class="site-list__link">Вязание на заказ</a>
@@ -41,11 +42,11 @@
                     <div class="form-fieldset-type__container-inputs">
                         <div class="form-fieldset-type__container-input">
                             <input class="form-fieldset-type__input" id="interier" type="radio" name="1" checked>
-                            <label class="form-fieldset-type__label" for="interier">Аксессуар для интерьера</label>
+                            <label class="form-fieldset-type__label form-label" for="interier">Аксессуар для интерьера</label>
                         </div>
                         <div class="form-fieldset-type__container-input">
                             <input class="form-fieldset-type__input" id="toy" type="radio" name="1">
-                            <label class="form-fieldset-type__label" for="toy">Детские игрушки</label>
+                            <label class="form-fieldset-type__label form-label" for="toy">Детские игрушки</label>
                         </div>
                     </div>
                 </fieldset>
@@ -54,61 +55,61 @@
                     <div class="form-fieldset-color__container-inputs">
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="white" type="checkbox" checked>
-                            <label class="form-fieldset-color__label" for="white">Белый</label>
+                            <label class="form-fieldset-color__label form-label" for="white">Белый</label>
                         </div>
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="gray" type="checkbox" checked>
-                            <label class="form-fieldset-color__label" for="gray">Серый</label>
+                            <label class="form-fieldset-color__label form-label" for="gray">Серый</label>
                         </div>
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="tiffani" type="checkbox">
-                            <label class="form-fieldset-color__label" for="tiffani">"Тиффани"</label>
+                            <label class="form-fieldset-color__label form-label" for="tiffani">"Тиффани"</label>
                         </div>
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="black" type="checkbox">
-                            <label class="form-fieldset-color__label" for="black">Черный</label>
+                            <label class="form-fieldset-color__label form-label" for="black">Черный</label>
                         </div>
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="pink" type="checkbox">
-                            <label class="form-fieldset-color__label" for="pink">Розовый</label>
+                            <label class="form-fieldset-color__label form-label" for="pink">Розовый</label>
                         </div>
                         <div class="form-fieldset-color__container-input">
                             <input class="form-fieldset-color__input" id="orange" type="checkbox">
-                            <label class="form-fieldset-color__label" for="orange">Оранжевый</label>
+                            <label class="form-fieldset-color__label form-label" for="orange">Оранжевый</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="section-form__form-fieldset form-fieldset form-fieldset-initials">
-                    <legend class="form-fieldset-initials__legend">Фио</legend>
+                    <legend class="form-fieldset-initials__legend form-legend">Фио</legend>
                     <div class="form-fieldset-initials__container-inputs">
                         <div class="form-fieldset-initials__container-input">
-                            <label class="form-fieldset-initials__label" for="name">Имя</label>
+                            <label class="form-fieldset-initials__label form-label" for="name">Имя</label>
                             <input class="form-fieldset-initials__input" id="name" type="text" placeholder="Введите ваше имя*" required>
                         </div>
                         <div class="form-fieldset-initials__container-input">
-                            <label class="form-fieldset-initials__label" for="surname">Фамилия</label>
+                            <label class="form-fieldset-initials__label form-label" for="surname">Фамилия</label>
                             <input class="form-fieldset-initials__input" id="surname" type="text" placeholder="Укажите фамилию*" required>
                         </div>
                         <div class="form-fieldset-initials__container-input">
-                            <label class="form-fieldset-initials__label" for="patronymic">Отчество</label>
+                            <label class="form-fieldset-initials__label form-label" for="patronymic">Отчество</label>
                             <input class="form-fieldset-initials__input" id="patronymic" type="text" placeholder="Отчество, если желаете">
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="section-form__form-fieldset form-fieldset form-fieldset-phone">
-                    <legend class="form-fieldset-phone__legend">Тел</legend>
+                    <legend class="form-fieldset-phone__legend form-legend">Тел</legend>
                     <div class="form-fieldset-phone__container-input">
                         <input class="form-fieldset-phone__input" type="tel" placeholder="+7 XXX XX XX*" required>
                     </div>
                 </fieldset>
                 <fieldset class="section-form__form-fieldset form-fieldset form-fieldset-email">
-                    <legend class="form-fieldset-email__legend">E-mail</legend>
+                    <legend class="form-fieldset-email__legend form-legend">E-mail</legend>
                     <div class="form-fieldset-email__container-input">
                         <input class="form-fieldset-email__input" type="email" placeholder="Ваш Email*" required>
                     </div>
                 </fieldset>
                 <fieldset class="section-form__form-fieldset form-fieldset form-fieldset-additionally">
-                    <legend class="form-fieldset-additionally__legend">E-mail</legend>
+                    <legend class="form-fieldset-additionally__legend form-legend">E-mail</legend>
                     <div class="form-fieldset-additionally__container-textarea">
                         <textarea class="form-fieldset-additionally__textarea" name="additionally" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                     </div>

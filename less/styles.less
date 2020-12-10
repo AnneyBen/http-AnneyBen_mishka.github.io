@@ -45,11 +45,22 @@ body{
     border: 2px solid @color-darken;
 }
 
-@import url("less/base/header.less");
-@import url("less/base/section-featured.less");
-@import url("less/base/section-about.less");
-@import url("less/base/section-reviews.less");
-@import url("less/base/section-contacts.less");
-@import url("less/base/footer.less");
+//general styles
+@import url("less/base/index/header.less");
+@import url("less/base/index/footer.less");
+
+//only styles from index
+
+@import url("less/base/index/section-featured.less");
+@import url("less/base/index/section-about.less");
+@import url("less/base/index/section-reviews.less");
+@import url("less/base/index/section-contacts.less");
+
+//only styles from catalog
+@import url("less/base/catalog/catalog-list.less");
+@import url("less/base/catalog/section-processing.less");
+
+//only styles from form
+@import url("less/base/form/section-form.less");
 
 
