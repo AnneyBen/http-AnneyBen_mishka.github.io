@@ -45,12 +45,20 @@ body {
   background-color: transparent;
   border: 2px solid #444444;
 }
-.site-list {
+body {
+  min-width: 320px;
+}
+.page-header__list,
+.tablet-version__item {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.site-list__link {
+.site-list__link,
+.menu-list__link,
+.other-list__link,
+.tablet-menu-list__link,
+.tablet-site-list__link {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
   font-size: 17px;
   line-height: 24px;
@@ -58,7 +66,8 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
-.site-list__link--search {
+.site-list__link--search,
+.tablet-site-list__link--search {
   padding: 0;
   border: none;
   font-size: 17px;
@@ -66,12 +75,107 @@ body {
   color: #000000;
   font-weight: bold;
 }
-.site-list__link--search::placeholder {
+.site-list__link--search::placeholder,
+.tablet-site-list__link--search::placeholder {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
+}
+.page-header__main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+.tablet-version {
+  display: flex;
+  flex-direction: column;
+}
+.tablet-version__item--logo {
+  order: -1;
+  height: 35px;
+}
+.other-list,
+.menu-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    display: none;
+  }
+  .site-list {
+    display: none;
+  }
+  .tablet-menu-list {
+    display: none;
+  }
+  .page-header__main-nav {
+    width: 768px;
+  }
+  .page-header__main-nav-container {
+    width: 668px;
+  }
+  .tablet-version {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tablet-version__item--logo {
+    order: 0;
+    height: 46px;
+  }
+  .tablet-site-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-list__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .menu-list__item--mobile-hidden {
+    display: block;
+    font-family: 'OpenSans-regular', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1150px) {
+  .menu-list {
+    display: none;
+  }
+  .page-header__main-nav {
+    width: 1150px;
+  }
+  .page-header__main-nav-container {
+    width: 1050px;
+  }
+  .tablet-menu-list {
+    display: flex;
+    justify-content: space-between;
+    width: 378px;
+  }
+  .tablet-version__item--logo {
+    height: 72px;
+  }
+  .tablet-site-list {
+    width: 400px;
+  }
+  .other-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .other-list__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+.page-header__container-things {
+  width: 320px;
+  margin: 0 auto;
 }
 .section-things__heading {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
@@ -79,6 +183,13 @@ body {
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+.section-things__inner {
+  display: flex;
+  flex-direction: column;
 }
 .section-things__mini-catalog {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
@@ -87,12 +198,46 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 .section-things__mini-catalog--interior {
   background-color: #63d1bb;
 }
 .section-things__mini-catalog--toys {
   background-color: #56c3b2;
+}
+@media (min-width: 768px) {
+  .page-header__container-things {
+    width: 668px;
+  }
+  .section-things__heading {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+  }
+  .section-things__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-things__mini-catalog {
+    flex-grow: 1;
+    flex-basis: 100px;
+  }
+}
+@media (min-width: 1150px) {
+  .page-header__container-things {
+    width: 1050px;
+  }
+  .section-things__heading {
+    font-size: 53px;
+    line-height: 57px;
+    width: 615px;
+  }
 }
 .page-footer__developed {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
