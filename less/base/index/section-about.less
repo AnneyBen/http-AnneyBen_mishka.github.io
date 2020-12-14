@@ -11,3 +11,46 @@
     font-weight: bold;
     .font(17px, 20px);
 }
+
+.section-about{
+    width: 260px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .section-about{
+        width: 668px;
+    }
+
+    .section-about__heading{
+        .font(43px, 50px);
+    }
+
+    .about-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about-list__item{
+        .font(20px, 22px);
+
+        width: 334px;
+    }
+    
+}
+
+@media (min-width: 1150px){
+    .section-about{
+        width: 700px;
+    }
+
+    .section-about__heading{
+        .font(53px, 57px);
+    }
+    
+    .about-list__item{
+        width: 50%;
+    }
+    
+}
