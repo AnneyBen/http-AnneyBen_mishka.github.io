@@ -1,9 +1,43 @@
 @import url("less/help/vars.less");
 @import url("less/help/mixins.less");
 
+.page-footer{
+    width: 100%;
+}
+
+.page-footer__wrapper{
+    width: 260px;
+    margin: 0 auto;
+}
+
+.page-footer__logo{
+    display: none;
+}
 
 .page-footer__developed{
     .open-bold();
     font-weight: bold;
     .font(19px, 18px);
 }
+
+
+@media (min-width: 768px){
+    .page-footer__wrapper{
+        width: 668px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .page-footer__logo{
+        display: block;
+    }
+}
+
+@media (min-width: 1150px){
+    .page-footer__wrapper{
+        width: 1050px;
+    }
+}
+
+
