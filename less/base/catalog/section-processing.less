@@ -1,12 +1,106 @@
 @import url("less/help/vars.less");
 @import url("less/help/mixins.less");
 
+.section-processing{
+    width: 260px;
+    margin: 0 auto;
+}
+
 .section-processing__title{
     .open-bold();
     font-weight: bold;
     .font(17px, 24px);
 }
 
+.section-processing__container-video{
+    width: 260px;
+    height: 150px;
+}
+
+.section-processing__title--top{
+    width: 192px;
+    margin: 0 auto;
+}
+
+.section-processing__title--bottom{
+    display: none;
+}
+
 .section-processing__text{
     .font(13px, 24px);
+
+    width: 192px;
+    margin: 0 auto;
+}
+
+.section-processing__button{
+    width: 192px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px){
+    .section-processing{
+        width: 668px;
+    }
+    
+    .section-processing__container-video{
+        width: 668px;
+        height: 455px;
+    }
+
+    .section-processing__title--top{
+        display: none;
+    }
+    
+    .section-processing__title--bottom{
+        display: block;
+        width: 584px;
+        margin: 0 auto;
+
+        .font(20px, 24px);
+    }
+    
+    .section-processing__text{
+        .font(15px, 30px);
+    
+        width: 584px;
+    }
+    
+    .section-processing__button{
+        max-width: none;
+        width: 584px;
+    }
+}
+
+@media (min-width: 1150px){
+    .section-processing{
+        width: 1050px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-processing__container-video{
+        width: 682px;
+        height: 455px;
+    }
+
+    .section-processing__container-description{
+        width: 368px;
+    }
+
+    .section-processing__title--bottom{
+        width: 230px;
+        margin: 0 auto;
+
+        .font(20px, 24px);
+    }
+
+    .section-processing__text{
+        width: 230px;
+    }
+
+    .section-processing__button{
+        width: 230px;
+    }
 }
