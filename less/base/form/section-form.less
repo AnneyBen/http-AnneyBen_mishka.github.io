@@ -1,14 +1,30 @@
 @import url("less/help/vars.less");
 @import url("less/help/mixins.less");
 
-.page-main__main-title{
+.page-main__main-title-form{
     .open-bold();
     font-weight: bold;
     .font(27px, 30px);
+
+    width: 260px;
+    margin: 0 auto;
+}
+
+.section-form__form{
+    .pama();
+    width: 260px;
+    margin: 0 auto;
 }
 
 .section-form__text{
     .font(13px, 24px);
+    width: 260px;
+    margin: 0 auto;
+}
+
+.section-form__form-fieldset{
+    border: none;
+    .pama();
 }
 
 .form-legend{
@@ -32,6 +48,9 @@
 .form-fieldset-additionally__textarea{
     .open-reg();
     .font(17px, 18px);
+
+    display: block;
+    width: 260px;
 }
 
 .form-fieldset-initials__input::placeholder,
@@ -45,5 +64,110 @@
 
 .section-form__tiny{
     .font(14px, 16px);
+}
+
+
+.form-fieldset-initials__label{
+    display: block;
+}
+
+.form-fieldset-additionally__textarea{
+    display: block;
+    width: 260px;
+}
+
+
+@media (min-width: 768px){
+    .page-main__main-title-form{
+        .font(43px, 50px);
+    
+        width: 668px;
+        text-align: center;
+    }
+    
+    .section-form__form{ 
+        width: 668px;
+    }
+
+    .section-form__text{
+        width: 668px;
+    }
+
+    .section-form__form-fieldset{
+        width: 668px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-legend{
+        width: 167px;
+    }
+
+    .container-inputs{
+        width: 501px;
+    }
+
+    .form-fieldset-initials__container-input{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-form__other{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-form__tiny{
+        order: 2;
+    }
+}
+
+@media (min-width: 1150px){
+    .page-main__main-title-form{
+        .font(53px, 57px);
+    
+        width: 1050px;
+    }
+    
+    .section-form__form{ 
+        width: 1050px;
+    }
+
+    .section-form__text{
+        width: 700px;
+    }
+
+    .section-form__form-fieldset{
+        width: 875px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-legend{
+        width: 175px;
+
+        padding-left: 64px;
+    }
+
+    .container-inputs{
+        width: 700px;
+    }
+
+    .form-fieldset-initials__container-input{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-form__other{
+        display: flex;
+        justify-content: space-between;
+
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .section-form__tiny{
+        order: 2;
+    }
 }
 
