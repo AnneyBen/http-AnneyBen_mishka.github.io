@@ -14,13 +14,14 @@
     <header class="page-header">
         <nav class="page-header__main-nav">
             <div class="page-header__main-nav-container container">
-                <ul class="page-header__list tablet-version">
+                <ul class="page-header__list tablet-version tablet-version--closed tablet-version--nojs">
+                    <button class="tablet-version__toggle">Открыть меню</button>
                     <ul class="tablet-version__item tablet-menu-list">
                         <li class="tablet-menu-list__item tablet-menu-list__item--catalog">
-                            <a href="catalog.html" class="tablet-menu-list__link">Каталог товаров</a>
+                            <a href="catalog.html" class="tablet-menu-list__link tablet-version__link">Каталог товаров</a>
                         </li>
                         <li class="tablet-menu-list__item">
-                            <a href="form.html" class="tablet-menu-list__link">Вязание на заказ</a>
+                            <a href="form.html" class="tablet-menu-list__link tablet-version__link">Вязание на заказ</a>
                         </li>
                     </ul>
                     <li class="tablet-version__item tablet-version__item--logo">
@@ -29,11 +30,11 @@
                         </a>
                     </li>
                     <ul class="tablet-version__item tablet-site-list">
-                        <li class="tablet-site-list__item">
-                            <input type="search" class="tablet-site-list__link tablet-site-list__link--search" placeholder="Поиск по сайту"/>
+                        <li class="tablet-site-list__item tablet-site-list__item--search">
+                            <input type="search" class="tablet-site-list__link tablet-site-list__link--search tablet-version__link" placeholder="Поиск по сайту"/>
                         </li>
                         <li class="tablet-site-list__item">
-                            <a href="#" class="tablet-site-list__link tablet-site-list__link--cart">Корзина: пока пуста</a>
+                            <a href="#" class="tablet-site-list__link tablet-site-list__link--cart tablet-version__link">Корзина: пока пуста</a>
                         </li>
                     </ul>
                 </ul>
@@ -68,6 +69,25 @@
             </article>
         </section>
     </header>
+
+
+ <script>
+        var navMain = document.querySelector('.tablet-version');
+        var navToggle = document.querySelector('.tablet-version__toggle');
+
+        navMain.classList.remove('tablet-version--nojs');
+
+        navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('tablet-version--closed'
+                )) {
+                navMain.classList.remove('tablet-version--closed');
+                navMain.classList.add('tablet-version--opened');    
+            } else {
+                navMain.classList.add('tablet-version--closed');
+                navMain.classList.remove('tablet-version--opened');
+            }
+        });
+    </script>
 
     <main class="page-main page-main--index">
 
@@ -171,5 +191,7 @@
             <p class="page-footer__developed">Разработано</p>
         </div>
     </footer>
+
+    
 </body>
 </html>
