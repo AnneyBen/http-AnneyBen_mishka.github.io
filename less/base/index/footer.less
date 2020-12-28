@@ -2,7 +2,11 @@
 @import url("less/help/mixins.less");
 
 .page-footer{
+    .pama();
     width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 24px;
+    padding-bottom: 30px;
 }
 
 .page-footer__wrapper{
@@ -14,14 +18,81 @@
     display: none;
 }
 
+.page-footer__network{
+    width: 142px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+}
+
+.network-items__item{
+    font-size: 0.01px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+}
+
+.network-items__item--insta{
+    width: 22px;
+    height: 21px;
+    background-image: url(../img/insta.png);
+}
+
+.network-items__item--fb{
+    width: 15px;
+    height: 28px;
+    background-image: url(../img/fb.png);
+}
+
+.network-items__item--twitter{
+    width: 23px;
+    height: 20px;
+    background-image: url(../img/twitter.png);
+}
+
+
 .page-footer__developed{
     .open-bold();
     font-weight: bold;
     .font(19px, 18px);
+    .pama();
+    width: 100%;
+    position: relative;
+    padding-left: 38px;
+}
+
+.page-footer__developed::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    
+    top: -28px;
+    left: 0;
+}
+
+.page-footer__developed::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-image: url(../img/htmlacademy.png);
+
+    top: -5px;
+    right: 39px;
 }
 
 
 @media (min-width: 768px){
+    .page-footer{
+        .pama();
+        padding-top: 45px;
+        padding-bottom: 58px;
+    }
+
     .page-footer__wrapper{
         width: 668px;
 
@@ -31,6 +102,30 @@
     
     .page-footer__logo{
         display: block;
+        width: 102px;
+        height: 34px;
+        margin-top: 6px;
+    }
+
+    .page-footer__network{
+        .pama();
+        margin-left: 76px;
+    }
+
+    .page-footer__developed{
+        .pama();
+        width: 182px;
+        text-align: left;
+        margin-top: 18px;
+    }
+
+    .page-footer__developed::before{
+        content: none;
+    }
+
+    .page-footer__developed::after{
+        top: -5px;
+        right: 0px;
     }
 }
 

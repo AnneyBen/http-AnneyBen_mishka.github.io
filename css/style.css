@@ -510,7 +510,12 @@ body {
   }
 }
 .page-footer {
+  padding: 0;
+  margin: 0;
   width: 100%;
+  background-color: #f1f1f1;
+  padding-top: 24px;
+  padding-bottom: 30px;
 }
 .page-footer__wrapper {
   width: 260px;
@@ -519,13 +524,71 @@ body {
 .page-footer__logo {
   display: none;
 }
+.page-footer__network {
+  width: 142px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+}
+.network-items__item {
+  font-size: 0.01px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+}
+.network-items__item--insta {
+  width: 22px;
+  height: 21px;
+  background-image: url(../img/insta.png);
+}
+.network-items__item--fb {
+  width: 15px;
+  height: 28px;
+  background-image: url(../img/fb.png);
+}
+.network-items__item--twitter {
+  width: 23px;
+  height: 20px;
+  background-image: url(../img/twitter.png);
+}
 .page-footer__developed {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding-left: 38px;
+}
+.page-footer__developed::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: -28px;
+  left: 0;
+}
+.page-footer__developed::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  background-image: url(../img/htmlacademy.png);
+  top: -5px;
+  right: 39px;
 }
 @media (min-width: 768px) {
+  .page-footer {
+    padding: 0;
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 58px;
+  }
   .page-footer__wrapper {
     width: 668px;
     display: flex;
@@ -533,6 +596,28 @@ body {
   }
   .page-footer__logo {
     display: block;
+    width: 102px;
+    height: 34px;
+    margin-top: 6px;
+  }
+  .page-footer__network {
+    padding: 0;
+    margin: 0;
+    margin-left: 76px;
+  }
+  .page-footer__developed {
+    padding: 0;
+    margin: 0;
+    width: 182px;
+    text-align: left;
+    margin-top: 18px;
+  }
+  .page-footer__developed::before {
+    content: none;
+  }
+  .page-footer__developed::after {
+    top: -5px;
+    right: 0px;
   }
 }
 @media (min-width: 1150px) {
@@ -890,6 +975,7 @@ body {
     width: 668px;
     position: relative;
     padding-top: 109px;
+    margin-bottom: 118px;
   }
   .section-reviews::before {
     content: "";
@@ -974,6 +1060,11 @@ body {
 .section-contacts {
   width: 260px;
   margin: 0 auto;
+  padding-top: 42px;
+  margin-bottom: 39px;
+}
+.section-contacts__container-contacts {
+  margin-bottom: 37px;
 }
 .section-contacts__title {
   padding: 0;
@@ -982,6 +1073,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 26px;
 }
 .section-contacts__table {
   width: 100%;
@@ -991,13 +1083,15 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
+.section-contacts__tr:first-child {
+  margin-bottom: 30px;
+}
 .section-contacts__td {
   font-size: 15px;
   line-height: 30px;
 }
 .section-contacts__td--value {
   width: 50px;
-  margin-bottom: 50px;
 }
 .section-contacts__td--weight {
   width: 182px;
@@ -1006,18 +1100,25 @@ body {
 .section-contacts__container-image {
   position: relative;
   height: 457px;
+  margin-bottom: 39px;
 }
 .section-contacts__image {
   position: absolute;
-  left: -12%;
+  left: -31px;
 }
 @media (min-width: 768px) {
   .section-contacts {
     width: 668px;
+    padding-top: 79px;
+    margin-bottom: 57px;
+  }
+  .section-contacts__container-contacts {
+    margin-bottom: 56px;
   }
   .section-contacts__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
   }
   .section-contacts__table {
     display: flex;
@@ -1029,16 +1130,21 @@ body {
   }
   .section-contacts__tr {
     width: 50%;
+    justify-content: start;
   }
   .section-contacts__td--value {
     width: 55px;
+    margin-right: 23px;
   }
   .section-contacts__td--weight {
     width: 220px;
   }
+  .section-contacts__container-image {
+    margin-bottom: 55px;
+  }
   .section-contacts__image {
     position: absolute;
-    left: -8%;
+    left: -50px;
     width: 768px;
     height: 457px;
   }
@@ -1053,6 +1159,8 @@ body {
     position: relative;
     min-height: 457px;
     padding-left: 175px;
+    padding-top: 213px;
+    margin-bottom: 105px;
   }
   .section-contacts__title {
     font-size: 53px;
@@ -1060,6 +1168,7 @@ body {
   }
   .section-contacts__table {
     display: block;
+    margin-bottom: 79px;
   }
   .section-contacts__tr {
     width: 100%;
@@ -1078,7 +1187,8 @@ body {
   .section-contacts__container-image {
     position: absolute;
     right: 0;
-    top: 0;
+    top: auto;
+    bottom: -55px;
     width: 525px;
     height: 457px;
   }
