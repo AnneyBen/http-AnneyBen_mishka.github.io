@@ -201,12 +201,28 @@ input[type="checkbox"]{
     margin-bottom: 23px;
 }
 
+.form-fieldset-phone__container-input{
+    position: relative;
+}
+
+.form-fieldset-phone__container-input::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    background-image: url(../img/phone.png);
+    top: -5px;
+    right: 8px;
+    filter: opacity(20%);
+}
+
 .form-fieldset-phone__input{
     .pama();
     border: none;
     border-bottom: 2px solid #000000;
     background-color: transparent;
     padding-bottom: 16px;
+    padding-right: 50px;
 }
 
 .form-fieldset-email{
@@ -221,12 +237,28 @@ input[type="checkbox"]{
     width: 179px;
 }
 
+.form-fieldset-email__container-input{
+    position: relative;
+}
+
+.form-fieldset-email__container-input::after{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    background-image: url(../img/mail.png);
+    top: 0px;
+    right: 4px;
+    filter: opacity(20%);
+}
+
 .form-fieldset-email__input{
     .pama();
     border: none;
     border-bottom: 2px solid #000000;
     background-color: transparent;
     padding-bottom: 16px;
+    padding-right: 50px;
 }
 
 .form-fieldset-additionally{
@@ -349,6 +381,7 @@ input[type="checkbox"]{
     }
     
     .wrapper__form-fieldset-color{
+        width: 100%;
         background-color: #f1f1f1;
         padding-top: 67px;
         padding-bottom: 9px;
@@ -400,7 +433,7 @@ input[type="checkbox"]{
 
     .wrapper__form-fieldset-initials{
         padding-top: 67px;
-        padding-bottom: 9px;
+        padding-bottom: 12px;
     }
 
     .form-fieldset-initials__container-input{
@@ -415,27 +448,113 @@ input[type="checkbox"]{
 
     .form-fieldset-initials__input{
         width: 100%;
+        padding-left: 17px;
+    }
+
+    .form-fieldset-initials__input::placeholder{
+        .font(19px, 18px);
+    }
+
+    .wrapper_form-fieldset-telmail{
+        width: 100%;
+        background-color: #f1f1f1;
+        padding-top: 67px;
+        padding-bottom: 46px;
+    }
+
+    .form-fieldset-phone{
+        margin-bottom: 37px;
+    }
+
+    .form-fieldset-phone__container-input::after{
+        width: 25px;
+        height: 24px;
+        top: -6px;
+        right: 8px;
+    }
+
+    .form-fieldset-phone__input{
+        display: block;
+        width: 100%;
+        margin-top: -1px;
+        padding-left: 17px;
+        padding-right: 80px;
+    }
+
+    .form-fieldset-phone__input::placeholder{
+        .font(19px, 18px);
+    }
+
+    .form-fieldset-email__container-input::after{
+        width: 32px;
+        height: 21px;
+        top: -1px;
+        right: 4px;
+    }
+
+    .form-fieldset-email__input{
+        display: block;
+        width: 100%;
+        margin-top: -1px;
+        padding-left: 17px;
+        padding-right: 80px;
+    }
+
+    .form-fieldset-email__input::placeholder{
+        .font(19px, 18px);
+    }
+
+    .wrapper_form-fieldset-additionally{
+        padding-top: 67px;
+        margin-bottom: 53px;
+    }
+
+    .form-fieldset-additionally__textarea{
+        margin-top: -17px;
+        min-width: 501px;
+        max-width: 501px;
+    }
+
+    .form-fieldset-additionally__textarea::placeholder{
+        .font(19px, 18px);
     }
 
     .section-form__other{
         display: flex;
         justify-content: space-between;
+        width: 668px;
+        margin: 0 auto;
+    }
+
+    .section-form__button{
+        width: 230px;
+        margin-bottom: 50px;
     }
 
     .section-form__tiny{
         order: 2;
+        .font(17px, 30px);
+        margin-top: 9px;
     }
 }
 
 @media (min-width: 1150px){
-    .page-main__main-title-form{
-        .font(53px, 57px);
-    
-        width: 1050px;
+    .page-header--form{
+        padding-bottom: 101px;
     }
-    
-    .section-form__form{ 
+
+    .page-header__main-nav--form {
+        margin-bottom: 51px;
+    }    
+
+    .page-header__main-title--form{
+        .font(53px, 57px);
         width: 1050px;
+        text-align: center;
+    }
+
+    .section-form__form{ 
+        padding-top: 124px;
     }
 
     .section-form__text{
@@ -443,14 +562,13 @@ input[type="checkbox"]{
     }
 
     .section-form__form-fieldset{
-        width: 875px;
+        width: 1050px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .form-legend{
         width: 175px;
-
         padding-left: 64px;
     }
 
@@ -458,9 +576,35 @@ input[type="checkbox"]{
         width: 700px;
     }
 
+    .wrapper__form-fieldset-color{
+        padding-bottom: 8px;
+    }
+
+    .form-fieldset-color__container-inputs{
+        width: 736px;
+        justify-content: space-between;
+    }
+
+    .form-fieldset-color__container-input:nth-child(odd){
+        margin-right: 0;
+    }
+
+    .form-fieldset-color__container-input{
+        width: 210px;
+    }
+
     .form-fieldset-initials__container-input{
         display: flex;
         justify-content: space-between;
+    }
+
+    .wrapper_form-fieldset-additionally{
+        margin-bottom: 49px;
+    }
+
+    .form-fieldset-additionally__textarea{
+        min-width: 700px;
+        max-width: 700px;
     }
 
     .section-form__other{
