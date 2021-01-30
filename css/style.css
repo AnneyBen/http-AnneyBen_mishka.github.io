@@ -112,7 +112,7 @@ body {
   position: absolute;
   width: 18px;
   height: 18px;
-  background-image: url(../img/search.png);
+  background-image: url(../img/search.svg);
   background-size: 18px;
   top: 28px;
   left: 32px;
@@ -123,7 +123,7 @@ body {
   position: absolute;
   width: 21px;
   height: 18px;
-  background-image: url(../img/cart.png);
+  background-image: url(../img/cart.svg);
   background-size: 21px 18px;
   top: 28px;
   left: 30px;
@@ -300,7 +300,7 @@ body {
     position: absolute;
     width: 21px;
     height: 18px;
-    background-image: url(../img/cart.png);
+    background-image: url(../img/cart.svg);
     background-size: 21px 18px;
     top: 31px;
     left: 30px;
@@ -428,7 +428,7 @@ body {
   height: 62px;
   top: 23px;
   right: 37px;
-  background-image: url(../img/interior.png);
+  background-image: url(../img/interior.svg);
 }
 .section-things__mini-catalog--toys::after {
   content: "";
@@ -437,7 +437,8 @@ body {
   height: 60px;
   top: 20px;
   right: 27px;
-  background-image: url(../img/toy.png);
+  background-image: url(../img/toy.svg);
+  background-size: 20px 27px;
 }
 .section-things__mini-catalog--interior {
   background-color: #63d1bb;
@@ -470,7 +471,7 @@ body {
     position: absolute;
     width: 100%;
     height: 22px;
-    background-image: url(../img/zigzag-fill-tablet.png);
+    background-image: url(../img/zigzag-fill-tablet.svg);
     left: 0;
     right: 0;
     bottom: 0;
@@ -1688,7 +1689,8 @@ input[type="checkbox"] {
   position: absolute;
   width: 22px;
   height: 16px;
-  background-image: url(../img/tick-mobile.png);
+  background-image: url(../img/tick-mobile.svg);
+  background-size: 22px 16px;
   top: 2px;
   left: 9px;
   display: none;
@@ -1731,7 +1733,8 @@ input[type="checkbox"] {
   position: absolute;
   width: 25px;
   height: 24px;
-  background-image: url(../img/phone.png);
+  background-image: url(../img/phone.svg);
+  background-size: 25px 24px;
   top: -5px;
   right: 8px;
   filter: opacity(20%);
@@ -1762,7 +1765,8 @@ input[type="checkbox"] {
   position: absolute;
   width: 32px;
   height: 21px;
-  background-image: url(../img/mail.png);
+  background-image: url(../img/mail.svg);
+  background-size: 32px 21px;
   top: 0px;
   right: 4px;
   filter: opacity(20%);
@@ -1910,7 +1914,8 @@ input[type="checkbox"] {
   .form-fieldset-color__label::after {
     width: 33px;
     height: 22px;
-    background-image: url(../img/tick-tablet.png);
+    background-image: url(../img/tick-tablet.svg);
+    background-size: 33px 22px;
     top: -1px;
     left: 11px;
   }
