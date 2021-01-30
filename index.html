@@ -25,9 +25,7 @@
                         </li>
                     </ul>
                     <li class="tablet-version__item tablet-version__item--logo">
-                        <a class="tablet-version__logo">
-                            <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Мишка" width="86" height="35">
-                        </a>
+                        <a class="tablet-version__logo"></a>
                     </li>
                     <ul class="tablet-version__item tablet-site-list">
                         <li class="tablet-site-list__item tablet-site-list__item--search">
@@ -71,7 +69,7 @@
     </header>
 
 
- <script>
+    <script>
         var navMain = document.querySelector('.tablet-version');
         var navToggle = document.querySelector('.tablet-version__toggle');
 
@@ -117,7 +115,7 @@
                     <picture>
                         <source media="(min-width:1150px)" srcset="
                                 img/triple-set-desktop.jpg 1x,
-                                img/triple-set-desktop.jpg 2x
+                                img/triple-set-desktop_2x.jpg 2x
                                 ">
                         <source media="(min-width:768px)" srcset="
                                 img/triple-set-tablet.jpg 1x,
@@ -187,7 +185,20 @@
                 <a href="#" class="section-contacts__button section-contacts__button--top button-common">Напишите нам</a>
             </article>
             <div class="section-contacts__container-image">
-                <img class="section-contacts__image" src="http://placehold.it/322x457" alt="Карта">
+                <picture>
+                    <source media="(min-width:1150px)" srcset="
+                            img/triple-set-desktop.jpg 1x,
+                            img/triple-set-desktop_2x.jpg 2x
+                            ">
+                    <source media="(min-width:768px)" srcset="
+                            img/triple-set-tablet.jpg 1x,
+                            img/triple-set-tablet_2x.jpg 2x
+                            ">
+                    <img class="section-contacts__image" 
+                            src="img/map-mobile.png"
+                            srcset="img/map-mobile_2x.png 2x" 
+                            alt="Карта">
+                </picture>
             </div>
             <a href="#" class="section-contacts__button section-contacts__button--bottom button-common">Напишите нам</a>
         </section>

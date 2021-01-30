@@ -156,22 +156,26 @@ body {
     padding: 24px 39px;
   }
   .tablet-version__item--logo {
-    padding: 20px 0;
+    padding: 22px 0;
+    padding-top: 18px;
   }
   .tablet-version__logo {
     display: block;
     width: 86px;
     height: 35px;
     margin: 0 auto;
+    background-image: url(../img/mishka-logo-mobile.svg);
+    background-size: 86px 35px;
   }
   .tablet-version__toggle {
     position: absolute;
     font-size: 0.01px;
     width: 20px;
-    height: 20px;
-    background-color: red;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0px 6px, 0px 12px;
     border: none;
-    top: 20px;
+    top: 28px;
     right: 31px;
   }
   .tablet-version--closed .tablet-version__item {
@@ -179,6 +183,30 @@ body {
   }
   .tablet-version--closed .tablet-version__item--logo {
     display: block;
+  }
+  .tablet-version--opened .tablet-version__toggle {
+    width: 20px;
+    height: 2px;
+    background-color: transparent;
+    box-shadow: none;
+    top: 28px;
+    right: 31px;
+  }
+  .tablet-version--opened .tablet-version__toggle::before,
+  .tablet-version--opened .tablet-version__toggle::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #000000;
+    top: 6px;
+    left: -4px;
+  }
+  .tablet-version--opened .tablet-version__toggle::before {
+    transform: rotate(45deg);
+  }
+  .tablet-version--opened .tablet-version__toggle::after {
+    transform: rotate(-45deg);
   }
 }
 @media (min-width: 768px) {
@@ -677,10 +705,6 @@ body {
   height: 315px;
   margin-bottom: 25px;
 }
-.section-featured__img {
-  width: 260px;
-  height: 315px;
-}
 .section-featured__price {
   font-size: 17px;
   line-height: 24px;
@@ -732,10 +756,6 @@ body {
     right: 0;
     z-index: -1;
   }
-  .section-featured__img {
-    width: 333px;
-    height: 403px;
-  }
   .section-featured__price {
     font-size: 20px;
     line-height: 24px;
@@ -779,10 +799,6 @@ body {
     height: 636px;
     top: 55px;
     right: 0;
-  }
-  .section-featured__img {
-    width: 525px;
-    height: 636px;
   }
 }
 .section-about__list {
@@ -1115,6 +1131,7 @@ body {
   margin-bottom: 39px;
 }
 .section-contacts__image {
+  display: block;
   position: absolute;
   left: -31px;
 }
