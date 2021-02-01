@@ -423,7 +423,7 @@ body {
   right: 37px;
   background-image: url(../img/interior.svg);
   background-size: 40px 62px;
-  filter: opacity(30%);
+  filter: opacity(20%);
 }
 .section-things__mini-catalog--toys::after {
   content: "";
@@ -434,7 +434,7 @@ body {
   right: 27px;
   background-image: url(../img/toy.svg);
   background-size: 60px 60px;
-  filter: opacity(30%);
+  filter: opacity(20%);
 }
 .section-things__mini-catalog--interior {
   background-color: #63d1bb;
@@ -570,17 +570,17 @@ body {
 .network-items__item--insta {
   width: 22px;
   height: 21px;
-  background-image: url(../img/insta.png);
+}
+.network-items__item-svg g {
+  fill: #46c1ae;
 }
 .network-items__item--fb {
   width: 15px;
   height: 28px;
-  background-image: url(../img/fb.png);
 }
 .network-items__item--twitter {
   width: 23px;
   height: 20px;
-  background-image: url(../img/twitter.png);
 }
 .page-footer__developed {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
