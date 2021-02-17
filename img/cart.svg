@@ -1,13 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px" viewBox="0 0 21 18" enable-background="new 0 0 21 18" xml:space="preserve">  <image id="image0" width="21" height="18" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8i
-Hx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx////+hzQhWAAAAEHRSTlMAryBA
-379gUM8wcIDvEI+fQlQLGwAAAAFiS0dEEeK1PboAAAAHdElNRQflAR8JGAOrhLyEAAAAgElEQVQY
-021Q0RLDIAijxWpbaM3/f+1QOiu35SHc5SSJEDkWrLRioQBGMk7goG7IxhnbLBbsfe4ok/pddaMH
-76Y7ER3MnHCy40QyPgj/QAKVCIW0pCuUvHri/QS80bex/LhK62g+M6C9ew0fKqhhOsYb6KQqxm3r
-cK3jxjk0aD0/rHcIsft1gp8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMDEtMzFUMDk6MjQ6MDMr
-MDM6MDDE6+5fAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTAxLTMxVDA5OjI0OjAzKzAzOjAwtbZW
-4wAAAABJRU5ErkJggg==" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.29 18.85">
+  <title>Ресурс 1</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Layer_1" data-name="Layer 1">
+      <path d="M19.54,7.23H16.39L13,.41a.75.75,0,1,0-1.34.67l3.07,6.14H5.58L8.65,1.08A.75.75,0,1,0,7.31.41L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.86,3a.74.74,0,0,0-.32.59.74.74,0,0,0,.7.74L3.8,18.85H16.5l1.66-5.79a.75.75,0,0,0,.7-.74.74.74,0,0,0-.32-.6l.85-3h.16a.75.75,0,1,0,0-1.5ZM15.36,17.35H4.93L3.71,13.07H16.59ZM17,11.56H3.28L2.46,8.73H17.82Z" style="fill: #231f20"/>
+    </g>
+  </g>
 </svg>
