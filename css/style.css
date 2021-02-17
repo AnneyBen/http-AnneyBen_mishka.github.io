@@ -442,6 +442,13 @@ body {
 .section-things__mini-catalog--toys {
   background-color: #56c3b2;
 }
+@media (max-width: 768px) {
+  .page-header__container-things {
+    background-image: url(../img/hero-mobile.jpg);
+    background-size: 320px 373px;
+    background-position: center -18px;
+  }
+}
 @media (min-width: 768px) {
   .page-header {
     position: relative;
@@ -449,6 +456,9 @@ body {
   .page-header__container-things {
     width: 768px;
     padding-top: 112px;
+    background-image: url(../img/hero-desktop.jpg);
+    background-size: 1150px 746px;
+    background-position: center -42px;
   }
   .page-header__container-things::after {
     content: "";
@@ -571,9 +581,6 @@ body {
   width: 22px;
   height: 21px;
 }
-.network-items__item-svg g {
-  fill: #46c1ae;
-}
 .network-items__item--fb {
   width: 15px;
   height: 28px;
@@ -581,6 +588,12 @@ body {
 .network-items__item--twitter {
   width: 23px;
   height: 20px;
+}
+.network-items__item:hover .network-items__item-svg g {
+  fill: #46c1ae;
+}
+.network-items__item:active .network-items__item-svg g {
+  opacity: 30%;
 }
 .page-footer__developed {
   font-family: 'OpenSans-bold', 'Helvetica Neue', sans-serif;
@@ -1124,11 +1137,31 @@ body {
 .section-contacts__td--weight {
   width: 182px;
   text-align: left;
+  position: relative;
+}
+.section-contacts__td--weight-under::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #63d1bb;
+  bottom: 0px;
+  left: 0;
 }
 .section-contacts__container-image {
   position: relative;
   height: 457px;
   margin-bottom: 39px;
+}
+.section-contacts__container-image::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 100px;
+  background-image: url(../img/map-pin.png);
+  top: 145px;
+  left: 108px;
+  z-index: 10;
 }
 .section-contacts__image {
   display: block;
@@ -1148,6 +1181,16 @@ body {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 49px;
+    position: relative;
+  }
+  .section-contacts__title::before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    background-image: url(../img/flag.png);
+    top: -15px;
+    right: 3px;
   }
   .section-contacts__table {
     display: flex;
@@ -1166,10 +1209,14 @@ body {
     margin-right: 23px;
   }
   .section-contacts__td--weight {
-    width: 220px;
+    width: auto;
   }
   .section-contacts__container-image {
     margin-bottom: 55px;
+  }
+  .section-contacts__container-image::before {
+    top: 139px;
+    left: 313px;
   }
   .section-contacts__image {
     position: absolute;
@@ -1195,6 +1242,10 @@ body {
     font-size: 53px;
     line-height: 57px;
   }
+  .section-contacts__title::before {
+    top: -8px;
+    left: -112px;
+  }
   .section-contacts__table {
     display: block;
     margin-bottom: 79px;
@@ -1206,7 +1257,6 @@ body {
     width: 55px;
   }
   .section-contacts__td--weight {
-    width: 225px;
     text-align: left;
   }
   .article-contacts {
@@ -1220,6 +1270,10 @@ body {
     bottom: -55px;
     width: 525px;
     height: 457px;
+  }
+  .section-contacts__container-image::before {
+    top: 146px;
+    left: 238px;
   }
   .section-contacts__image {
     position: static;
